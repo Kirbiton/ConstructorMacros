@@ -110,6 +110,11 @@ namespace ConstructorMacrosWPF
         }
 
         bool firstFocus = true;
+        public static bool IsFirtstFocus(bool x)
+        {
+            if(x) return true;
+            else return false;
+        }
         private void textBox1_GotFocus(object sender, RoutedEventArgs e)
         {
             if (firstFocus)
